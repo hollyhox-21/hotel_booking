@@ -1,0 +1,22 @@
+{
+  "name": "hotel-booking-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test src/api.test.js",
+    "format": "prettier --write src vite.config.js index.html package.json",
+    "format:check": "prettier --check src vite.config.js index.html package.json"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "vite": "^7.2.0"
+  }
+}

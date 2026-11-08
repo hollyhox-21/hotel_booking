@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+    id 'com.diffplug.spotless' version '8.1.0'
+}
+group = 'org.example'
+version = '1.0.0'
+java { toolchain { languageVersion = JavaLanguageVersion.of(22) } }
+repositories { mavenCentral() }
+dependencies {
+    api 'org.springframework:spring-tx'
+    api platform('org.springframework.boot:spring-boot-dependencies:4.1.2')
+    api 'org.springframework.boot:spring-boot-starter-webmvc'
+    api 'org.springframework.boot:spring-boot-starter-validation'
+    api 'org.springframework.boot:spring-boot-starter-security'
+    api 'org.springframework.boot:spring-boot-starter-security-oauth2-resource-server'
+    api 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.2.0'
+}
+spotless { java { googleJavaFormat('1.28.0') } }

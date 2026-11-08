@@ -1,0 +1,6 @@
+.runtime/
+.DS_Store
+frontend/node_modules/
+frontend/dist/
+.idea/
+.runtime-verification/
